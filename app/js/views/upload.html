@@ -1,0 +1,39 @@
+<div class="cv-manager-tab-content upload-tab-content" ng-controller="uploadCVCtrl as upload"
+     flow-init flow-prevent-drop
+     flow-drag-leave="style={}"
+     ng-style="style">
+    <div class="alert jumbotron" flow-drop flow-drag-enter="class='alert-success'" flow-drag-leave="class=''"
+         ng-class="class">
+        <h4 class="text-center">Drag And Drop your files here</h4>
+        <table class="table table-hover table-bordered table-striped" flow-transfers ng-show="upload.filesAdded.length > 0">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>File Name</th>
+                <th>Applicant Name</th>
+                <th><div class="text-center"><span>Status</span></div></th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="file in upload.filesAdded">
+                    <td>{{$index+1}}</td>
+                    <td>{{file.fileName}}</td>
+                    <td class="col-md-6">
+                        <div class="input-group" ng-show="file.status !=='Uploading'">
+                            <input type="text" ng-model="file.applicantName" class="form-control">
+                          <span class="input-group-btn">
+                            <button class="btn" ng-click="upload.updateApplicantName(file)" ng-class="{'btn-info': file.status =='Saved' || file.status =='Updated', 'btn-warning disabled': file.status =='Updating'}" type="button">Update</button>
+                          </span>
+                        </div>
+                        <span ng-show="file.status ==='Uploading'">Retrieving applicant name...</span>
+                    </td>
+                    <td>
+                        <h4 class="text-center">
+                            <span class="label" ng-class="{'label-success': file.status =='Saved' || file.status =='Updated', 'label-warning': file.status =='Uploading' || file.status =='Updating'}">{{file.status}}</span>
+                        </h4>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
