@@ -11,7 +11,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../../bower_components/paper-styles/typography.html">
 
-<dom-module id="my-greeting">
+<dom-module id="search-page">
   <template>
     <style include="shared-styles">
       :host {
@@ -24,10 +24,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <h2 class="page-title">{{greeting}}</h2>
-    <span>Update text to change the greeting.</span>
+    <h2 class="page-title">Search</h2>
     <!-- Listens for "input" event and sets greeting to <input>.value -->
-    <input value="{{greeting::input}}">
+    <input value="{{search::input}}" placeholder="example: ios java">
   </template>
 
   <script>
@@ -35,12 +34,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       'use strict';
 
       Polymer({
-        is: 'my-greeting',
+        is: 'search-page',
 
         properties: {
-          greeting: {
+          search: {
             type: String,
-            value: 'Welcome!',
             notify: true
           }
         }

@@ -2,7 +2,7 @@
  * Created by DugganJ on 05/11/2015.
  */
 //angular
-var app = angular.module('CVManager', ['ngRoute', 'flow'])
+var app = angular.module('CVManager', ['ngRoute'])
     .config( ['$routeProvider', function($routeProvider) {
 
         $routeProvider
