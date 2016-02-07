@@ -2,21 +2,10 @@
   "name": "cv-manager",
   "private": true,
   "dependencies": {
-    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
-    "neon-elements": "PolymerElements/neon-elements#^1.0.0",
-    "page": "visionmedia/page.js#~1.6.4",
-    "paper-elements": "PolymerElements/paper-elements#^1.0.1",
-    "platinum-elements": "PolymerElements/platinum-elements#^1.1.0",
-    "polymer": "Polymer/polymer#^1.2.0",
     "bootstrap": "^3.3.6",
     "angular": "^1.4.9",
     "angular-route": "^1.4.9",
-    "flow.js": "^2.10.1",
-    "ng-flow": "^2.7.1",
-    "PACE": "pace#^1.0.2"
-  },
-  "devDependencies": {
-    "web-component-tester": "^4.0.0"
-  },
-  "ignore": []
+    "PACE": "pace#^1.0.2",
+    "ng-flow": "^2.7.1"
+  }
 }
