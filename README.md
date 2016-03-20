@@ -1,9 +1,9 @@
 ## Prerequisites
 
-Download and unzip Elasticsearch at https://www.elastic.co/downloads/elasticsearch
+Download and unzip Elasticsearch v2.1.2 at https://www.elastic.co/downloads/past-releases/elasticsearch-2-1-2
 ```bash
 $ cd [path to where elasticsearch is installed]/bin
-$ plugin install elasticsearch/elasticsearch-mapper-attachments/3.0.2
+$ plugin install elasticsearch/elasticsearch-mapper-attachments/3.1.2
 $ service install
 $ service start
 ```
