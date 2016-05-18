@@ -1,4 +1,4 @@
-## Prerequisites
+### Prerequisites
 
 Download and unzip Elasticsearch v2.1.2 at https://www.elastic.co/downloads/past-releases/elasticsearch-2-1-2
 ```bash
@@ -31,7 +31,7 @@ POST http://localhost:9200/cv_manager
 }}}}
 ```
 
-## Install & Build
+### Install & Build
 
 ```bash
 $ git clone https://[user_name]@bitbucket.org/jonathanduggan/cv-manager.git 
@@ -39,7 +39,7 @@ $ cd cv-manager
 $ npm start
 ```
 
-## Run
+### Run
 
 ```bash
 http://localhost:3003/
